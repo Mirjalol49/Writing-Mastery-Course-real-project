@@ -68,3 +68,13 @@ background-clip: text;
     height: auto;
     object-fit: cover;
 }
+
+@media screen and (max-width: 600px) { 
+
+    .time-box {
+        flex-direction: column;
+    }
+
+    
+    
+}
