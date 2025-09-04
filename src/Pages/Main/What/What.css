@@ -1,0 +1,200 @@
+
+.what-section {
+  margin-top: 50px;
+  padding: 4rem 0;
+ 
+}
+
+.what-title {
+    display: block;
+font-family: 'Cubano';
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    background-image: linear-gradient(200.67deg, rgb(255, 255, 255) 25%, rgb(255, 240, 102) 35%, rgb(255, 163, 26) 55.54%, rgb(255, 0, 115) 75%);
+    background-size: 100% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 700px;
+    margin: 0px auto;
+
+ }
+
+
+.what-description {
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Timeline container styling */
+.what-section .container {
+  max-width: 900px;
+}
+
+/* Timeline item enhancements - BIGGER TEXT */
+.what-section h3 {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.3 !important;
+}
+
+.what-section p {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0.75rem !important;
+  font-weight: 400 !important;
+}
+
+.what-section span {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  opacity: 0.9 !important;
+}
+
+/* Make timeline dots even bigger */
+.what-section .relative.z-10.rounded-full {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-width: 6px !important;
+}
+
+/* Timeline line styling */
+.what-section .absolute.bottom-0.top-0.w-1 {
+  width: 4px !important;
+  background: linear-gradient(180deg, #E5E7EB 0%, #22c55e 100%) !important;
+}
+
+/* Timeline spacing */
+.what-section .flex.last\\:mb-0 {
+  margin-bottom: 3rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.what-section .flex.last\\:mb-0:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Timeline item hover effects */
+.what-section .flex.last\\:mb-0:hover {
+  transform: translateX(10px);
+}
+
+.what-section .flex.last\\:mb-0:hover h3 {
+  color: #22c55e !important;
+  transition: color 0.3s ease !important;
+}
+
+.what-section .flex.last\\:mb-0:hover .relative.z-10.rounded-full {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+}
+
+/* Enhanced timeline line animation */
+.what-section .absolute.bottom-0.top-0.w-1 {
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+/* Timeline item entrance animation */
+.what-section .flex {
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.what-section .flex:nth-child(1) { animation-delay: 0.1s; }
+.what-section .flex:nth-child(2) { animation-delay: 0.2s; }
+.what-section .flex:nth-child(3) { animation-delay: 0.3s; }
+.what-section .flex:nth-child(4) { animation-delay: 0.4s; }
+.what-section .flex:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .what-section {
+    margin-top: 50px;
+    padding: 2rem 0;
+  }
+
+  .what-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .what-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+
+  /* Smaller timeline items on mobile */
+  .what-section h3 {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .what-section p {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .what-section span {
+    font-size: 0.9rem !important;
+  }
+
+  /* Smaller dots on mobile */
+  .what-section .relative.z-10.rounded-full {
+    width: 2rem !important;
+    height: 2rem !important;
+    border-width: 4px !important;
+  }
+
+  /* Thinner line on mobile */
+  .what-section .absolute.bottom-0.top-0.w-1 {
+    width: 3px !important;
+  }
+
+  /* Less spacing on mobile */
+  .what-section .flex.last\\:mb-0 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-title {
+    font-size: 2rem;
+  }
+
+  .what-description {
+    font-size: 1rem;
+  }
+
+  .what-section h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .what-section p {
+    font-size: 1rem !important;
+  }
+
+  .what-section .relative.z-10.rounded-full {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    border-width: 3px !important;
+  }
+}
+
