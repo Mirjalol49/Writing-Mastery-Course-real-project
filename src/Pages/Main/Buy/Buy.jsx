@@ -18,7 +18,7 @@ const Buy = () => {
 
             </p>
             <p className='buy-content-price'>500 000 UZS</p>
-            <button className='buy-content-button'>Buy Now</button>
+            <a href='https://t.me/saidabdullaeva' className='buy-content-button'>Buy Now</a>
             </div>
 
             

@@ -84,6 +84,8 @@
    align-items: center;
    justify-content: center;
    margin: 30px  auto 0 auto;
+   width: 100%;
+   max-width: 250px;
 
   }
   
@@ -93,7 +95,7 @@
   
   .buy-content-button:active {
     background-color: rgb(255, 56, 86);
-    /*50, 168, 80*/
+  
     box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
     transform: translateY(5px);
     transition: 200ms;
