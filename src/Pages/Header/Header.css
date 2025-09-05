@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 600px) {
   .header-title {
-
+text-align: center;
     line-height:1;
    
   }

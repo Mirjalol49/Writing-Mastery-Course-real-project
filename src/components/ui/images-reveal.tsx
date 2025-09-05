@@ -42,11 +42,11 @@ export default function ImagesReveal() {
       <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-semibold mt-8 px-4">
       Everything You Need to Boost Your Score
       </h1>
-      <div className="relative my-8 px-4 grid grid-cols-2 gap-4 sm:gap-6 md:flex md:flex-row md:justify-center md:gap-20 md:px-0">
+      <div className="relative my-8 px-4 mx-auto grid grid-cols-2 gap-4 place-items-center sm:gap-6 md:flex md:flex-row md:justify-center md:gap-20 md:px-0">
         {cards.map((card, i) => (
           <motion.img
             key={i}
-            className="size-20 sm:size-24 md:size-36 rounded-2xl border-[6px] border-white object-cover shadow-xl md:-ml-20"
+            className={`size-20 sm:size-24 md:size-36 rounded-2xl border-[6px] border-white object-cover shadow-xl ${i > 0 ? 'md:-ml-20' : ''}`}
             src={card.src} // ✅ now this works
             custom={{ index: i, angle: card.angle }}
             initial="hidden"
