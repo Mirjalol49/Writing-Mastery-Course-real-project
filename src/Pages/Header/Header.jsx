@@ -32,7 +32,7 @@ const Header = () => {
              <ImagesReveal />
              
     <div class="glass-wrapper">
-  <a href="https://t.me/@saidabdullaeva" class="buy-content-button">
+  <a href="https://t.me/saidabdullaeva" class="buy-content-button">
    Enroll Now
   </a>
     </div>
