@@ -39,14 +39,14 @@ const cardVariants = {
 export default function ImagesReveal() {
   return (
     <div>
-      <h1 className="text-center text-2xl font-semibold mt-8">
+      <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-semibold mt-8 px-4">
       Everything You Need to Boost Your Score
       </h1>
-      <div className="relative my-10 ml-10 flex flex-row justify-center gap-20 md:ml-20">
+      <div className="relative my-8 px-4 grid grid-cols-2 gap-4 sm:gap-6 md:flex md:flex-row md:justify-center md:gap-20 md:px-0">
         {cards.map((card, i) => (
           <motion.img
             key={i}
-            className="relative -ml-10 size-24 rounded-2xl border-[6px] border-white object-cover shadow-xl md:-ml-20 md:size-36"
+            className="size-20 sm:size-24 md:size-36 rounded-2xl border-[6px] border-white object-cover shadow-xl md:-ml-20"
             src={card.src} // ✅ now this works
             custom={{ index: i, angle: card.angle }}
             initial="hidden"
