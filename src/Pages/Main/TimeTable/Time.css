@@ -43,6 +43,7 @@ background-clip: text;
     font-size: 2rem;
     font-weight: bold;
     color: #0f0d0e;
+    text-align: center;
 }
 
 .time-box-morning-description {
@@ -70,11 +71,26 @@ background-clip: text;
 }
 
 @media screen and (max-width: 600px) { 
-
+.time-title {
+    font-size: 2.5rem;
+}
     .time-box {
         flex-direction: column;
+        
     }
 
+    .time-box-gif {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .time-box-morning-title {
+        font-size: 1.5rem;
+    }
+
+    .time-box-morning-description {
+        font-size: 1rem;
+    }
     
     
 }

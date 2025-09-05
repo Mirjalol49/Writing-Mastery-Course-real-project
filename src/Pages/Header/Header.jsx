@@ -30,6 +30,12 @@ const Header = () => {
              <p className='header-logo-text'>Gulruh D'Aloia</p>
          </div>
              <ImagesReveal />
+             
+    <div class="glass-wrapper">
+  <a href="https://t.me/@saidabdullaeva" class="buy-content-button">
+   Enroll Now
+  </a>
+    </div>
 
      
        

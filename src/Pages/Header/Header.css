@@ -5,6 +5,9 @@
   margin-top: 50px;
   flex-direction: column;
   gap: 15px;
+  padding: 0 15px; /* Add horizontal padding to prevent content from touching edges */
+  box-sizing: border-box; /* Include padding in element's total width */
+  width: 100%; /* Ensure content takes full width */
   --tw-text-opacity: 1;
   color: rgb(204 220 255/var(--tw-text-opacity));
   font-weight: 700;
@@ -105,5 +108,4 @@
     height: 40px;
   }
 }
-
 
